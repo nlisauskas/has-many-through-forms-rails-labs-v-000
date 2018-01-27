@@ -9,7 +9,7 @@
   <%= link_to user.username, user_path(user) %>
   <% end %>
 
-  Add a comment below: 
+  Add a comment below:
   <%= form_for @comment do |f| %>
   <%= f.hidden_field :post_id, :value => @post.id %>
   <%= f.label :user_id, "Select Existing User" %>
