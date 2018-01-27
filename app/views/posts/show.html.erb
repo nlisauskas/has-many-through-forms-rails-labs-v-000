@@ -1,1 +1,7 @@
-
+<%= @post.title %>
+<%= @post.content %>
+<ul>
+  <% @post.comments.each do |comment| %>
+  <li> <%= comment.content %> - <%= comment.username.name %></li>
+  <% end %>
+</ul>
